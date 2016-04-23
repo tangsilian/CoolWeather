@@ -6,9 +6,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpUtill {
-
+/**
+ * 新启一个线程来获取服务器的数据
+ */
 	public static void sendHttpRequest(final String address, final HttpCallbackListener listener) {
-		// 新启一个线程来获取服务器的数据
+		
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
