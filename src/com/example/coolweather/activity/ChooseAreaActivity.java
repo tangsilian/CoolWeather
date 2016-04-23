@@ -80,12 +80,12 @@ public class ChooseAreaActivity extends Activity {
 	            finish();  
 	            return;  
 	        }  
-	        if (prefs.getBoolean("city_selected", false)) {  
+	        /*if (prefs.getBoolean("city_selected", false)) {  
 	            Intent intent = new Intent(this, WeatherActivity.class);  
 	            startActivity(intent);  
 	            finish();  
 	            return;  
-	        }  
+	        }  */
 	        requestWindowFeature(Window.FEATURE_NO_TITLE);  
 	        setContentView(R.layout.choose_area);  
 	        listView = (ListView) findViewById(R.id.list_view);  
